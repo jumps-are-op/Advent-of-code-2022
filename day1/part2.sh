@@ -28,7 +28,7 @@ main(){
 			continue
 		fi
 		totalcals=$((totalcals+cals))
-	done <part2_input.txt
+	done <input.txt
 
 	if [ "$totalcals" -gt "$largestcals1" ];then
 		largestcals1=$totalcals

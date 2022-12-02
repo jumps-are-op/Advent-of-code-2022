@@ -14,7 +14,7 @@ main(){
 		else
 			totalcals=$((totalcals+cals))
 		fi
-	done <part1_input.txt
+	done <input.txt
 
 	[ "$totalcals" -gt "$largestcals" ] && largestcals=$totalcals
 	echo "$largestcals"
