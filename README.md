@@ -1,4 +1,4 @@
-## AoC in POSIX shell script (made with `ed` The standard text editor)
+## Advent of code in POSIX shell script (made with `ed` The standard text editor)
 ### Why?
 Why not :-)
 
