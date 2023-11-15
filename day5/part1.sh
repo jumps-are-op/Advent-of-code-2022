@@ -16,11 +16,9 @@ main(){
 	EOF
 
 	while read -r _ n _ from _ to;do
-		# There is no simple way to run a command n time, weird.
-		while [ "$n" -gt 0 ];do
+		for _ in $(seq "$n");do
 			pushto "stack_$to" "$(popfrom "stack_$from")"
 			popfrom "stack_$from" >/dev/null
-			n=$((n-1))
 		done
 	done <<-EOF
 		$(tail -n +11 input.txt)
